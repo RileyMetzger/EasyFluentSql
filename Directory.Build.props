@@ -1,0 +1,29 @@
+<!-- Directory.Build.props -->
+<Project>
+  <PropertyGroup>
+    <!-- Set the default .NET version -->
+    <TargetFramework>net8.0</TargetFramework>
+
+    <!-- Centralize package versioning -->
+    <Version>1.0.0</Version>
+    <Authors>SimonMetzger</Authors>
+
+    <!-- Output directory for builds -->
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\</OutputPath>
+
+    <!-- Common assembly info -->
+    <Company>YourCompanyName</Company>
+    <Product>EasyFluentSql</Product>
+
+    
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- License Information -->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/RileyMetzger/EasyFluentSql</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RileyMetzger/EasyFluentSql</RepositoryUrl>
+    <Authors>Simon Metzger</Authors>    
+    <Copyright>Simon Metzger © 2025</Copyright>
+  </PropertyGroup>
+</Project>
