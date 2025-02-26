@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <Folder Include="Builders\" />
+    <Folder Include="ValueTypes\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
 
 </Project>
