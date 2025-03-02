@@ -8,32 +8,37 @@ namespace EasyFluentSql.Core.Interfaces.Clauses;
 
 public interface IClause
 {
-    string Build();
+    bool IsCollection { get; }
+    string GetToken();
 }
-
-
 
 /// <summary>
 /// for selecting column data, can be subqueries as well.
 /// </summary>
 public interface ISelectorClause : IClause
 {
+    string? Alias { get; }
 }
 
 /// <summary>
 /// Handles Tables, views, arrays and subqueries.  Anything you can query from.
 /// </summary>
-public interface ITargetTableClause
+public interface ITargetTableClause : IClause
 {
+
+    string? Alias { get; }
+
 }
 
-
+public interface IGroupByClause : IClause
+{
+}
 
 /// <summary>
 /// generates where portion of a statement. Where clauses can be logic attached to
 /// columns, parameters and even subqueries.
 /// </summary>
-public interface IWhereClause
+public interface IWhereClause : IClause
 {
 }
 
@@ -46,9 +51,7 @@ public interface IHavingClause : IWhereClause
 }
 
 
-public interface IGroupByClause
-{
-}
+
 
 public interface ICollectionClause<TClause> : IClause
     where TClause : IClause

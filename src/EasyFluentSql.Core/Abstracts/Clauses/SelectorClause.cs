@@ -1,25 +1,38 @@
-﻿using EasyFluentSql.Core.Interfaces.Clauses;
+﻿using EasyFluentSql.Core.Interfaces;
+using EasyFluentSql.Core.Interfaces.Clauses;
 
 namespace EasyFluentSql.Core.Abstracts.Clauses;
 
-public abstract class SelectorClause(string columnName, string? alias = null) : ISelectorClause
+public abstract class SelectorClause<TSpecification> : Clause<TSpecification>, ISelectorClause
+    where TSpecification : ILanguageSpecification, new()
 {
-    public string ColumnName { get; } = columnName;
+    public string ColumnName { get; }
 
-    public string? Alias { get; } = alias;
+    public string? Alias { get; }
 
-    public abstract string Build();
+    public SelectorClause(string columnName, string? alias)
+    {
+        ColumnName = columnName;
+        Alias = alias;
+    }
+    
 }
 
-public abstract class SubQuerySelectorClass(SelectStatement selectStatement, string? alias = null) : ISelectorClause
+public abstract class SelectorSubquery<TSpecification> : Clause<TSpecification>, ISelectorClause
+    where TSpecification : ILanguageSpecification, new()
 {
-    public SelectStatement SelectStatement { get; } = selectStatement;
-    public string? Alias { get; } = alias;
+    public string? Alias { get; }
 
-    public abstract string Build();
+    protected SelectorSubquery(string? alias)
+    {
+        Alias = alias;
+    }
 }
 
-public abstract class SelectorCollectionClause : CollectionClause<ISelectorClause>, ISelectorClause
+public abstract class SelectorParent<TSpecification>(TSpecification specification) 
+    : CollectionClause<ISelectorClause, TSpecification>(specification), ISelectorClause
+        where TSpecification : ILanguageSpecification, new()
 {
-
+    public string? Alias { get; }
 }
+

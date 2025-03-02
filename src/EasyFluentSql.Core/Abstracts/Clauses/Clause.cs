@@ -1,17 +1,26 @@
-﻿using EasyFluentSql.Core.Interfaces.Clauses;
+﻿using EasyFluentSql.Core.Interfaces;
+using EasyFluentSql.Core.Interfaces.Clauses;
 
 namespace EasyFluentSql.Core.Abstracts.Clauses;
 
-public abstract class Clause : IClause
+public abstract class Clause<TSpecification> : IClause
+    where TSpecification : ILanguageSpecification, new()
 {
-    public abstract string Build();
+    private static Lazy<TSpecification> SpecificationLazy { get; } = new(() => new TSpecification());
+    public static TSpecification Specification => SpecificationLazy.Value;
+    public virtual bool IsCollection => false;
+    public abstract string GetToken();
 }
 
 
-public abstract class CollectionClause<TClause> : ICollectionClause<TClause> where TClause : IClause
+public abstract class CollectionClause<TClause, TSpecification>(TSpecification specification) 
+    : Clause<TSpecification>, ICollectionClause<TClause> 
+        where TClause : IClause 
+        where TSpecification : ILanguageSpecification, new()
 {
-    private readonly List<TClause> _clauses = [];
+    public override bool IsCollection => true;
 
+    private readonly List<TClause> _clauses = [];
 
     public void Add(TClause clause)
     {
@@ -27,6 +36,6 @@ public abstract class CollectionClause<TClause> : ICollectionClause<TClause> whe
     {
         return _clauses.Count();
     }
-
-    public abstract string Build();
+    
 }
+

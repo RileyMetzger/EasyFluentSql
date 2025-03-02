@@ -1,0 +1,9 @@
+<!-- Directory.Build.targets -->
+<Project>
+  <Target Name="CustomBuildStep" AfterTargets="Build">
+    <Message Text="Running custom build step for $(MSBuildProjectName)..." Importance="High" />
+    <!-- Example: Copy output files to a shared directory -->
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll"
+          DestinationFolder="$(SolutionDir)artifacts\$(Configuration)\" />
+  </Target>
+</Project>

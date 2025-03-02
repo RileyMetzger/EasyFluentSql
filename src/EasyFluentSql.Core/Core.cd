@@ -1,135 +1,156 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.Clause&lt;TSpecification&gt;" Collapsed="true">
+    <Position X="9.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAABAAAAAAAAAAIAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstracts\Clauses\Clause.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.CollectionClause&lt;TClause, TSpecification&gt;" Collapsed="true">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAQAQAAAAIAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Abstracts\Clauses\Clause.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.SelectorClause&lt;TSpecification&gt;" Collapsed="true">
+    <Position X="8.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstracts\Clauses\SelectorClause.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.SelectorSubquery&lt;TSpecification&gt;" Collapsed="true">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstracts\Clauses\SelectorClause.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.SelectorParent&lt;TSpecification&gt;" Collapsed="true">
+    <Position X="15" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstracts\Clauses\SelectorClause.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="EasyFluentSql.Core.Abstracts.ConnectionInformation" Collapsed="true">
-    <Position X="13.5" Y="1.25" Width="1.5" />
+    <Position X="17.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Abstracts\ConnectionInformation.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.SqlBuilder&lt;TLanguageFactory&gt;" Collapsed="true">
-    <Position X="3.25" Y="7.25" Width="1.5" />
+  <Class Name="EasyFluentSql.Core.Abstracts.LanguageSpecification&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\SqlBuilder.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.SqlStatement&lt;TBuilder&gt;" Collapsed="true">
-    <Position X="9.25" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\SqlBuilder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.SelectBuilder&lt;TLanguageFactory&gt;" Collapsed="true">
-    <Position X="3.25" Y="8.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAEAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAg=</HashCode>
-      <FileName>Abstracts\SqlBuilder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.SelectStatement&lt;TLanguageFactory&gt;" Collapsed="true">
-    <Position X="9.25" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\SqlBuilder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.SelectorClause" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAABAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\Clauses\SelectorClause.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Abstracts\LanguageSpecification.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.SubQuerySelectorClass" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="13.5" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAgAAAAAAAAAAAACA=</HashCode>
-      <FileName>Abstracts\Clauses\SelectorClause.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.SelectorCollectionClause" Collapsed="true">
-    <Position X="6.25" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\Clauses\SelectorClause.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.Clause" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\Clauses\Clause.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="EasyFluentSql.Core.Abstracts.Clauses.CollectionClause&lt;TClause&gt;" Collapsed="true">
-    <Position X="6.25" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAQAQAAAAAgAAAAIAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\Clauses\Clause.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Interface Name="EasyFluentSql.Core.Abstracts.ISqlBuilder" Collapsed="true">
-    <Position X="13.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Abstracts\SqlBuilder.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.IClause" Collapsed="true">
-    <Position X="4.5" Y="1.25" Width="1.5" />
+    <Position X="10.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\Clauses\IClause.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.ISelectorClause" Collapsed="true">
-    <Position X="3.25" Y="2.5" Width="1.5" />
+    <Position X="9.25" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\Clauses\IClause.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.ITargetTableClause" Collapsed="true">
-    <Position X="11.75" Y="4.25" Width="1.5" />
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Clauses\IClause.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.IGroupByClause" Collapsed="true">
+    <Position X="16.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\Clauses\IClause.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.IWhereClause" Collapsed="true">
-    <Position X="3.25" Y="4.25" Width="1.5" />
+    <Position X="18.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\Clauses\IClause.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.IHavingClause" Collapsed="true">
-    <Position X="3.25" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\Clauses\IClause.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.IGroupByClause" Collapsed="true">
-    <Position X="11.75" Y="3.5" Width="1.5" />
+    <Position X="20.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\Clauses\IClause.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="EasyFluentSql.Core.Interfaces.Clauses.ICollectionClause&lt;TClause&gt;" Collapsed="true">
-    <Position X="5.5" Y="2.5" Width="1.5" />
+    <Position X="11.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAA=</HashCode>
       <FileName>Interfaces\Clauses\IClause.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.ILanguageFactory" Collapsed="true">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACCAAAAAAAAAAAAAAAABAAAAAAAAAAAAgAQAAAAA=</HashCode>
+      <FileName>Interfaces\ILanguageFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.ISelectorFactory" Collapsed="true">
+    <Position X="20.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILanguageFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.ITargetFactory" Collapsed="true">
+    <Position X="22" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILanguageFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.IWhereFactory" Collapsed="true">
+    <Position X="20.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Interfaces\ILanguageFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.IGroupByFactory" Collapsed="true">
+    <Position X="18.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILanguageFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.IHavingFactory" Collapsed="true">
+    <Position X="22" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILanguageFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EasyFluentSql.Core.Interfaces.ILanguageSpecification" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILanguageSpecification.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
